@@ -1,0 +1,66 @@
+#include<cstdio>
+int num;
+main(){
+	printf("Dame el numero que quieres convertir a Romano\n");
+	scanf("%i",&num);
+         if(num>=2000){num=num-2000;
+        printf("MM");
+		}
+		if(num>=1000){num=num-1000;
+		printf("M");
+		}
+		if(num>=900){num=num-900; 
+		printf("CM");
+		}
+		if(num>=500){num=num-500; 
+		printf("D");}
+		if(num>=400){num=num-400; 
+		printf("CD");
+		}
+		if(num>=300){num=num-100; 
+		printf("C");
+		}
+		if(num>=200){num=num-100; 
+		printf("C");
+		}
+		if(num>=100){num=num-100; 
+		printf("C");
+		}
+		if(num>=90){num=num-90;
+		printf("XC");
+		}
+		if(num>=50){num=num-50; 
+		printf("L");
+		}
+		if(num>=40){num=num-40; 
+		printf("XL");
+		}
+		if(num>=30){num=num-10; 
+		printf("X");
+		}
+		if(num>=20){num=num-10; 
+		printf("X");
+		}
+		if(num>=10){num=num-10;  
+		printf("X");
+		}
+		if(num>=9){num=num-9;
+		printf("IX");
+		}
+		if(num>=5){num=num-5;
+		printf("V");
+		}
+		if(num>=4){num=num-4;	
+		printf("IV");
+		}
+		if(num>=3){num=num-3; 
+		printf("III");
+		}
+		if(num>=2){num=num-2; 
+		printf("II");
+		}
+		if(num>=1){num=num-1; 
+		printf("I");
+		}
+		return 0;
+}
